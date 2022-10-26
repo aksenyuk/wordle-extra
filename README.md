@@ -16,7 +16,7 @@ P.S.: Follow the picture above to find the listed ways of installation.
 It's posted here as :
 
 - ```./src/game.js``` (functionality component of the game)
-- ```./src/style.css`` (the look of the program)
+- ```./src/style.css``` (the look of the program)
 - ```index.html``` (web page creation)
 
 ## In case of any suggestions (design/funny detail you'd like to add):
