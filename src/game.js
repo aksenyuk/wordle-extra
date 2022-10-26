@@ -125,15 +125,13 @@ function shadeKeyBoard(letter, color) {
   for (const elem of document.getElementsByClassName("keyboard-button")) {
     if (elem.textContent === letter) {
       let oldColor = elem.style.backgroundColor
+      
       if (oldColor === 'green') {
         return
       }
-
       if (oldColor === 'yellow' && color !== 'green') {
         return
       }
-
-
       elem.style.backgroundColor = color
       break
     }
@@ -201,7 +199,7 @@ function revealWord(guess) {
           shadeKeyBoard(letter, "#b59f3b")
         } else {
           box.classList.add('empty');
-          shadeKeyBoard(letter, "#3a3a3c")
+          shadeKeyBoard(letter, "#3a3a3c")  ## color does not get applied
         }
       }
     }, ((i + 1) * animation_duration) / 2);
