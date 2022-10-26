@@ -1,0 +1,274 @@
+body {
+  background: var(--default);
+}
+
+:root {
+  --default: #121213;
+  --empty: #3a3a3c;
+  --wrong: #b59f3b;
+  --right: #538d4e;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 8rem;
+  /*margin: auto;*/
+  width: 100%;
+  height: 72vh;
+  overflow: auto;
+}
+
+.grid {
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(8, auto);
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--empty);
+  margin: 3px;
+  color: white;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.box.empty {
+  background: var(--empty);
+}
+
+.box.wrong {
+  background: var(--wrong);
+}
+
+.box.right {
+  background: var(--right);
+}
+
+.animated {
+  animation: flip 0.5s ease;
+}
+
+@keyframes flip {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+h2 {
+  border-top: 0.01em solid var(--empty);
+  margin-top: 20px;
+}
+
+#keyboard {
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+  bottom:140px;
+}
+
+#keyboard div {
+  display: flex;
+}
+
+.keyboard-button {
+  font-size: 13px;
+  font-family: "Arial";
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  background-color: #818384;
+  margin: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 41px;
+  height: 57px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.enter {
+  font-size: 12px;
+  font-family: "Arial";
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  background-color: #818384;
+  margin: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 65px;
+  height: 57px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.third-row img {
+  display: block;
+  padding: 0.5rem;
+  margin-top: 1px;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.delete {
+  padding: 0.5rem;
+  border: none;
+  background-color: #818384;
+  margin: 3px;
+  cursor: pointer;
+  width: 65px;
+  height: 57px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+#logo {
+  position: center;
+  display: block;
+  margin: auto;
+  top: 0;
+  margin-top: 18px;
+}
+
+#question {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: black;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  height: 175px;
+  width: 500px;
+}
+
+
+.result-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.result-content {
+  background-color: black;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  height: 175px;
+  width: 500px;
+}
+
+#hint_text {
+  color: white;
+  font-family: Candara;
+  font-size: 24px;
+  margin-left: 25px;
+}
+
+
+#hint_header{
+  color: white;
+  font-family: Candara;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: dimgray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.result-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.result-close:hover,
+.result-close:focus {
+  color: dimgray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#result_text {
+  text-align: center;
+  color: white;
+  font-family: Candara;
+  font-size: 24px;
+  margin-left: 25px;
+
+}
+
+#result_header{
+  text-align: center;
+  color: white;
+  font-family: Candara;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 25px;
+
+}
+
+#reset-text {
+  text-align: center;
+  color: white;
+  font-family: Candara;
+  font-size: 16px;
+  margin-left: 25px;
+}
+
