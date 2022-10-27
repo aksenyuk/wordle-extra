@@ -285,6 +285,7 @@ h2 {
 }
 
 #hint_text {
+  margin-top: 0.5em;
   color: white;
   font-family: Candara;
   font-size: 1em;
@@ -292,6 +293,7 @@ h2 {
 }
 
 #result_text {
+  margin-top: 0.5em;
   text-align: center;
   color: white;
   font-family: Candara;
@@ -300,6 +302,7 @@ h2 {
 }
 
 #hint_header{
+  margin-top: 0.5em;
   color: white;
   font-family: Candara;
   font-size: 1.5em;
@@ -336,6 +339,7 @@ h2 {
 }
 
 #result_header{
+  margin-top: 0.5em;
   text-align: center;
   color: white;
   font-family: Candara;
@@ -346,6 +350,7 @@ h2 {
 }
 
 #reset-text {
+  margin-top: 0.5em;
   text-align: center;
   color: white;
   font-family: Candara;
@@ -354,6 +359,7 @@ h2 {
 }
 
 #anniversary {
+  margin-top: 0.5em;
   text-align: center;
   color: white;
   font-family: Candara;
