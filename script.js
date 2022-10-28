@@ -226,6 +226,9 @@ function displayModals() {
       if (targetWord === "iloveyou") {
         document.getElementById("anniversary").textContent = "Happy Anniversary, bby ♥";
       }
+      if (targetWord === "penis") {
+        document.getElementById("anniversary").textContent = "YOU GOT SCAMMED";
+      }
       result.style.display = "block";
 
       close.onclick = function () {
