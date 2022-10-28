@@ -106,7 +106,7 @@ h2 {
   justify-content: center;
   align-content: center;
   flex-grow: 1;
-  grid-template-columns: repeat(8, 2.5em);
+  grid-template-columns: repeat(5, 2.5em);
   grid-template-rows: repeat(6, 2.5em);
   gap: .22em;
   margin-bottom: 1em;
