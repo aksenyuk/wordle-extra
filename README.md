@@ -2,6 +2,10 @@
 
 ### Created for my fellow friends so that we could possibly guess our own words of the day!
 
+## To access:
+
+Follow the link to the right (below "About" section)
+
 ## To install:
 
 <img src="https://github.com/allsuitablenamesarealreadytaken/wordle-extra/blob/main/where-to-find.jpg" width="800" height="300" />
