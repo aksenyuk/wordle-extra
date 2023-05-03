@@ -226,9 +226,6 @@ function displayModals() {
       if (targetWord === "iloveyou") {
         document.getElementById("anniversary").textContent = "Happy Anniversary, bby ♥";
       }
-      else {
-        document.getElementById("anniversary").textContent = "Correct!";
-      }
       result.style.display = "block";
 
       close.onclick = function () {
